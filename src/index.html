@@ -24,8 +24,8 @@
           <input 
             type="text" 
             name="surname" 
-            autocomplete="off">
-          </input>
+            autocomplete="off"
+          >
         </label>
         <label class="form_field">
           Name:
@@ -33,7 +33,7 @@
             type="text" 
             name="name"
             autocomplete="off"
-            ></input>
+          >
         </label>
         <label class="form_field">
           How old are You?
@@ -43,21 +43,20 @@
             min="1" 
             max="100" 
             name="age" 
-            required>
-          </input>
+            required
+          >
         </label>
         <label class="form_field">
           Full date of birth:
           <input type="date" name="date">
-        </input>
         </label>
         <label class="form_field">
           I accept the term of the agreement
           <input
             type="checkbox" 
             name="checkbox" 
-            required>
-          </input>
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="fieldset">
@@ -70,8 +69,8 @@
             type="email" 
             placeholder="email@example.com" 
             name="email"
-            required>
-          </input>
+            required
+          >
         </label>
         <label class="form_field">
           Password:
@@ -80,7 +79,8 @@
             name="password"
             minlength="5" 
             maxlength="10" 
-            required>
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="fieldset">
@@ -89,12 +89,24 @@
         </legend> 
         <label class="form_field">
           Do you love cats?
-          <input type="radio" name="radio1">
+          <input 
+            type="radio" 
+            name="radio1"
+            id="r1"
+            value="r1"
+          >            
+          <label for="r1">
             Yes
-          </input>
-          <input type="radio" name="radio2">
-            No
-          </input>
+          </label> 
+          <input 
+            type="radio" 
+            name="radio1" 
+            id="r2"
+            value="r2"
+          >
+          <label for="r2">
+            Now
+          </label>
         </label>
         <label class="form_field">
           What is your favorite color?
@@ -108,7 +120,7 @@
           What are your favorite brand of cars?
           <select name="cars" multiple>
             <option value="BMV">
-              BMV
+              BMW
             </option>
             <option value="Audi">
               Audi
@@ -129,17 +141,16 @@
         </legend> 
         <label class="form_field">
           Comments
-          <textarea 
-            name="textarea">
+          <textarea name="textarea">
           </textarea>
         </label>
         <label class="form_field"> 
           Would you recommend us?
           <select name="select" >
-            <option>
+            <option value="yes">
               yes
             </option>
-            <option>
+            <option value="no">
               no
             </option>
           </select>
